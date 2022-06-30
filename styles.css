@@ -28,6 +28,7 @@ input {
   position: fixed;
   background-color: white;
   overflow: hidden;
+  z-index: 999;
 }
 .navbar .logo {
   height: 40px;
@@ -61,13 +62,22 @@ input {
   background-image: url(assets/splash.jpg);
   background-size: cover;
 }
+.splash h1 {
+  font-size: 6em;
+  margin: 0;
+  width: fit-content;
+  color: white;
+  position: relative;
+  top: 100px;
+  left: 10%;
+}
 .splash .searchbar {
   width: 30%;
   height: 40px;
   margin: 0 auto;
   background-color: white;
   position: relative;
-  top: 40px;
+  top: 255px;
   box-shadow: 4px 4px 20px black;
 }
 .splash .searchbar input {
@@ -92,7 +102,7 @@ input {
 }
 
 .main .filters {
-  margin: 12px 0;
+  margin: 60px 0;
   text-align: center;
 }
 .main .filters .button {
@@ -109,7 +119,7 @@ input {
 }
 .main .filters .button:hover {
   background-color: #ddd;
-  color: white;
+  color: grey;
   box-shadow: 0 0.5em 0.5em -0.4em white;
   animation-name: button-slide;
   animation-duration: 0.5s;
@@ -124,18 +134,22 @@ input {
   animation-fill-mode: forwards;
 }
 .main .grid {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
 }
 .main .grid .grid-results {
-  text-align: center;
+  text-align: left;
 }
 .main .grid .square {
   display: inline-block;
   border: 1px solid black;
-  width: 200px;
+  box-sizing: border-box;
+  width: 300px;
   height: 200px;
-  margin: 5px;
+  margin: 12px;
+}
+.main .grid .square:first-of-type {
+  margin: 12px 12px 12px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
