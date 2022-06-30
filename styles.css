@@ -148,8 +148,5 @@ input {
   height: 200px;
   margin: 12px;
 }
-.main .grid .square:first-of-type {
-  margin: 12px 12px 12px 0;
-}
 
 /*# sourceMappingURL=styles.css.map */
