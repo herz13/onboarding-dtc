@@ -5,6 +5,6 @@ var button = document.getElementById('searchbutton');
 
 button.addEventListener('click', function() {
     var search = document.getElementById('searchbar').value;
-    xhttp.open("GET", url);
-    xhttp.send(search);
+    xhttp.open("GET", url + '?search=' + search);
+    xhttp.send();
 });
